@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa'; 
-import ThemeToggle from './ThemeToggle'; 
+import ThemeToggle from './Themetoggle'; 
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -24,10 +24,10 @@ const Header = () => {
         <nav className={`nav ${isNavOpen ? 'open' : ''}`} data-aos="fade-up">
           {isNavOpen && (
             <ul>
-              <li><a href="#about" onClick={toggleNav} className='animate__animated animate__bounce' data-aos="fade-in" data-aos-duration="1000">About</a></li>
-              <li><a href="#skills" onClick={toggleNav} className='animate__animated animate__bounce' data-aos="fade-in" data-aos-duration="2000">Skills</a></li>
-              <li><a href="#project" onClick={toggleNav} className='animate__animated animate__bounce' data-aos="fade-in" data-aos-duration="3000">Projects</a></li>
-              <li><a href="#contact" onClick={toggleNav} className='animate__animated animate__bounce' data-aos="fade-in" data-aos-duration="4000">Contact</a></li>
+              <li><a href="#about" onClick={toggleNav}>About</a></li>
+              <li><a href="#skill" onClick={toggleNav}>Skill</a></li>
+              <li><a href="#project" onClick={toggleNav}>Project</a></li>
+              <li><a href="#contact" onClick={toggleNav}>Contact</a></li>
             </ul>
           )}
         </nav>
