@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import lightModeIcon from '../assets/dark.png';
 import darkModeIcon from '../assets/light.png';
 
-const ThemeToggle = () => {
+const Themetoggle = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   const toggleTheme = () => {
@@ -25,4 +25,4 @@ const ThemeToggle = () => {
   );
 };
 
-export default ThemeToggle;
+export default Themetoggle;
