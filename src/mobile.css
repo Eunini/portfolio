@@ -26,10 +26,16 @@
         background-color: #121212;
         padding: 2rem 5rem;
         z-index: 1000;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        transform: translateY(100%);
+        opacity: 0;
       }
-    
+    .nav.open{
+      transform: translateY(0);
+      opacity: 1;
+   }
       .nav ul {
-        flex-direction: column;
+        flex-direction: column; 
         gap: 10px;
         z-index: 1000;
         text-align: center;
@@ -43,9 +49,7 @@
         font-size: 18px;
         z-index: 1000;
       }
-      .nav ul li a:hover{
-        color: crimson;
-      }
+
       .toggle{
         color: white;
       }
@@ -120,7 +124,14 @@
         font-size: 18px;
       }
       .contact-item{
-        margin-bottom: 0;
+        justify-content: center;
+        margin: 0 2px;
+        display: flex;
+        align-items: center;
+      }
+      .div{
+        display: flex;
+        flex-direction: column;
       }
       .project-card {
         justify-content: center;
@@ -130,7 +141,9 @@
         width: 300px;
         height: 250px;
       }
-      
+      .social-media-list{
+        gap: 1rem;
+      }
       .scroll-to-top{
         width: 20px;
         padding: 10px;
@@ -143,7 +156,7 @@
         margin: auto;
       }
       .download-button {
-        font-size: 14px;
-        padding: 8px 16px;
+        font-size: 16px;
+        padding: 10px 15px;
       }
 }

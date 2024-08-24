@@ -51,7 +51,6 @@ h1{
 .nav {
   display: flex;
   flex-direction: row;
-  position: absolute;
   gap: 2rem;
 }
 .nav ul{
@@ -328,18 +327,20 @@ li {
 .contact-info {
   justify-content: space-around;
   display: flex;
+  flex-direction: column;
   margin: 10px;
   padding: 20px;
   align-items: center;
 }
-
+.div{
+  margin: auto;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+}
 .contact-item {
   display: flex;
   margin-bottom: 1rem;
-}
-
-.contact-label {
-  font-weight: bold;
 }
 
 /* Social Media List Styles */
@@ -360,8 +361,17 @@ li {
   color: crimson; 
 }
 .contact-item{
+  margin: 0 10px;
   display: flex;
   align-items: center;
+}
+.note p{
+  font-size: 1rem;
+  padding: 5px 0;
+}
+.contact-detail{
+  padding: 0;
+  margin: 0;
 }
 .contact-label{
   padding: 10px;

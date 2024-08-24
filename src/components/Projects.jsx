@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import projects from '../constants/projectData';
-import { FaDownload } from 'react-icons/fa';
 
 const Projects = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -16,7 +15,7 @@ const Projects = () => {
   return (
     <div className="projects-container" id='project'>
       <h2 className="title">My Projects</h2>
-      <div className="projects-grid">
+      <div className="projects-grid" data-aos="fade-up">
         {projects.map((project, index) => (
           <div
             key={index}
@@ -29,17 +28,12 @@ const Projects = () => {
               <div className="project-info">
                 <a href={project.url} target="_blank" rel="noopener noreferrer" className='project-title'><h3 className="project-title">{project.title}</h3></a>
                 <p className="project-description">{project.description}</p>
+                <a href={project.sourceUrl} target="_blank" rel="noopener noreferrer" className='project-title'><h3 className="project-title">Source code</h3></a>
               </div>
           </div>
           
         ))}
       </div>
-
-      <div className="download-container">
-      <a href="/path-to-your-resume.pdf" download className="download-button">
-        Download my resume<FaDownload size={16} />
-      </a>
-    </div>
 
     </div>
   );

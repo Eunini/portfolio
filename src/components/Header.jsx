@@ -21,13 +21,13 @@ const Header = () => {
           {isNavOpen ? <FaTimes size={30} /> : <FaBars size={30} />}
         </div>
 
-        <nav className={`nav ${isNavOpen ? 'open' : ''}`}>
+        <nav className={`nav ${isNavOpen ? 'open' : ''}`} data-aos="fade-up">
           {isNavOpen && (
             <ul>
-              <li><a href="#about" onClick={toggleNav}>About</a></li>
-              <li><a href="#skills" onClick={toggleNav}>Skills</a></li>
-              <li><a href="#projects" onClick={toggleNav}>Projects</a></li>
-              <li><a href="#contact" onClick={toggleNav}>Contact</a></li>
+              <li><a href="#about" onClick={toggleNav} className='animate__animated animate__bounce' data-aos="fade-in" data-aos-duration="1000">About</a></li>
+              <li><a href="#skills" onClick={toggleNav} className='animate__animated animate__bounce' data-aos="fade-in" data-aos-duration="2000">Skills</a></li>
+              <li><a href="#project" onClick={toggleNav} className='animate__animated animate__bounce' data-aos="fade-in" data-aos-duration="3000">Projects</a></li>
+              <li><a href="#contact" onClick={toggleNav} className='animate__animated animate__bounce' data-aos="fade-in" data-aos-duration="4000">Contact</a></li>
             </ul>
           )}
         </nav>

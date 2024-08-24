@@ -50,11 +50,14 @@ body.dark-mode .theme-icon{
 body.dark-mode .mobile-toggle{
     color: #242424;
 }
-body.dark-mode .nav {
-    background-color: #dddddd;
+body.dark-mode .nav.open {
+    background-color: #242424;
+    opacity: .9;
+    border: 2ps solid white;
+    border-radius: 15px;
 }
 body.dark-mode .nav ul li a{
-    color: crimson;
+    color: white;
 }
 body.dark-mode .project-card{
     border: .5px solid crimson;

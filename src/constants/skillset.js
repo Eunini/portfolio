@@ -26,7 +26,7 @@ const skills = [
     { 
       name: 'Python', 
       level: 75, 
-      info: 'Python is a versatile language I use for data analysis, AI and more.', 
+      info: 'Python is a versatile language I use for data analysis, AI, Image Analysis and more.', 
       img: '/images/py.png' 
     },
     { 
@@ -58,6 +58,12 @@ const skills = [
       level: 75, 
       info: 'Bootstrap, a popular CSS framework that helps to create responsive web designs quickly.', 
       img: '/images/boot.png' 
+    },
+    { 
+      name: 'WordPress Dev', 
+      level: 75, 
+      info: 'I build Content Management Systems with wordpress, I generate good content and design beautiful UI', 
+      img: '/images/wordpress.png' 
     },
   ];
   export default skills;
