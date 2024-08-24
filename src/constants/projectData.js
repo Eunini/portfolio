@@ -21,13 +21,6 @@ const projects = [
         sourceUrl: 'https://github.com/Eunini/calculator'
       },
       { 
-        title: 'MovieHere', 
-        description: 'A movie static movie platform built with reactjs and tailwindcss just to practice UI design.', 
-        img: '/images/4.png',
-        url: 'https://moviehere.onrender.com/',
-        sourceUrl: 'https://github.com/Eunini/movieHere'
-      },
-      { 
         title: 'Easy Banking', 
         description: 'A user-friendly banking site landing page designed to practice frontend skill.', 
         img: '/images/5.png', 
