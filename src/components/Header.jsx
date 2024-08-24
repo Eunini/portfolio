@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa'; 
-import ThemeToggle from './ThemeToggle'; 
+import ThemeToggle from './Themetoggle'; 
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
