@@ -38,9 +38,9 @@ const About = () => {
             {isModalOpen && (
                 <div className="modal-overlay" onClick={handleCloseModal}>
                     <div className="modal-content" data-aos="zoom-in-up" data-aos-duration="800">
-                        <p data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
+                        <h2 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
                             Not yet ready, check back later.
-                        </p>
+                        </h2>
                         <button onClick={handleCloseModal} data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
                             Close
                         </button>
