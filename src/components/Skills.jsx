@@ -13,7 +13,7 @@ const Skills = () => {
   };
 
   return (
-    <div className="skills-container">
+    <div className="skills-container" id="skill">
       <h2 className="title" data-aos="fade-up"
      data-aos-duration="3000">My Skills</h2>
       <div className="skills-slider">
