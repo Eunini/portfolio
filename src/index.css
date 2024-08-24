@@ -133,7 +133,12 @@ li {
   width: 30px;
   height: 30px;
 }
-
+.resume{
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+}
 /* loading contents of skills components */
 .skills-container {
   padding: 20px;

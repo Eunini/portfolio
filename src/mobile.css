@@ -16,6 +16,7 @@
       .header {
         margin: 0 0;
       }
+      
       .nav {
         display: none;
         flex-direction: column;
@@ -32,6 +33,9 @@
       }
     .nav.open{
       transform: translateY(0);
+      background-color: #242424;
+      border: 2px solid white;
+      border-radius: 15px;
       opacity: 1;
    }
       .nav ul {
@@ -158,5 +162,9 @@
       .download-button {
         font-size: 16px;
         padding: 10px 15px;
+      }
+      .resume{
+        font-size: 1rem;
+        padding: 10px 0;
       }
 }
