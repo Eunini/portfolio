@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import lightModeIcon from '../assets/light.png';
-import darkModeIcon from '../assets/dark.png';
+import lightModeIcon from '../assets/dark.png';
+import darkModeIcon from '../assets/light.png';
 
 const ThemeToggle = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -17,7 +17,7 @@ const ThemeToggle = () => {
   return (
     <button className="theme-toggle" onClick={toggleTheme}>
       <img
-        src={darkMode ? lightModeIcon : darkModeIcon}
+        src={darkMode ? lightModeIcon  : darkModeIcon}
         alt={darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
         className="theme-icon"
       />

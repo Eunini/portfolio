@@ -11,6 +11,7 @@ body {
   padding: 0;
   position: relative;
   background-color: #242424;
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -50,17 +51,23 @@ h1{
 .nav {
   display: flex;
   flex-direction: row;
+  position: absolute;
+  gap: 2rem;
 }
 .nav ul{
   flex-direction: row;
   display: flex;
 }
-
+.nav.open {
+  display: block;
+}
 .mobile-toggle {
   display: none;
   cursor: pointer;
 }
-
+.view {
+  color: white;
+}
 .header nav a {
   font-size: 20px;
   color: #fff;
@@ -123,8 +130,9 @@ li {
 }
 
 .theme-icon {
-  width: 40px;
-  height: 40px;
+  color: white;
+  width: 30px;
+  height: 30px;
 }
 
 /* loading contents of skills components */
@@ -193,6 +201,8 @@ li {
   margin: 0 auto;
   align-items: center;
   display: flex;
+  background-color: transparent;
+  background: transparent;
 }
 .modal-overlay {
   position: fixed;
@@ -277,8 +287,14 @@ li {
   border-top-right-radius: 20px;
   width: 100%;
   transition: opacity 0.3s ease;
+  object-fit: cover;
 }
-
+.project-thumbnail::before {
+  content: '';
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8); 
+  z-index: 0;
+}
 .project-info {
   position: absolute;
   top: 50%;
@@ -361,6 +377,9 @@ li {
   cursor: pointer;
   transition: opacity 0.3s ease-in-out;
   z-index: 1000;
+  background-color: crimson;
+  border: 0;
+  outline: 0;
 }
 
 .scroll-to-top:hover {
@@ -369,4 +388,31 @@ li {
 
 .scroll-to-top svg {
   display: block;
+}
+
+.download-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.download-button {
+  background-color: #4CAF50;
+  color: white;
+  margin: 10px 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #7cc780;
 }

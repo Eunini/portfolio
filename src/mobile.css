@@ -5,45 +5,56 @@
 
     .theme-toggle {
         display: block;
+        padding: 0 5px;
       }
     
       .mobile-toggle {
         display: block;
+        z-index: 2000;
+        padding: 0 5px;
       }
-    
+      .header {
+        margin: 0 0;
+      }
       .nav {
         display: none;
         flex-direction: column;
-        gap: 10px;
         position: absolute;
-        top: 60px;
-        right: 20px;
+        top: 4rem;
+        right: 3rem;
+        gap: 2rem;
         background-color: #121212;
-        padding: 20px;
-        border-radius: 5px;
-      }
-    
-      .nav.open {
-        display: flex;
+        padding: 2rem 5rem;
+        z-index: 1000;
       }
     
       .nav ul {
         flex-direction: column;
         gap: 10px;
+        z-index: 1000;
+        text-align: center;
+        justify-content: center;
       }
     
       .nav ul li a {
+        margin: auto;
+        justify-content: center;
+        text-align: center;
         font-size: 18px;
+        z-index: 1000;
+      }
+      .nav ul li a:hover{
+        color: crimson;
       }
       .toggle{
         color: white;
       }
       .title {
         width: 200px;
-        font-size: 32px;
+        font-size: 28px;
       }
       section h2{
-        font-size: 30px;
+        font-size: 28px;
         text-align: left;
         padding: 0 0rem;
       }
@@ -75,7 +86,8 @@
         align-items: center;
         margin: 10px 0;
         width: 80vw;
-        height: 200px;
+        height: 40vh;
+        border: 2px solid crimson;
       }
       .modal-content {
         text-align: center;
@@ -94,18 +106,21 @@
       }
       .modal-img{
         width: 200px;
-        height: 150px;
+        height: 180px;
       }
       .contact-info {
         justify-content: center;
         flex-direction: column;
         display: flex;
         margin: 10px 0;
-        padding: 20px;
+        padding: 10px;
         align-items: center;
       }
       .contact-label{
         font-size: 18px;
+      }
+      .contact-item{
+        margin-bottom: 0;
       }
       .project-card {
         justify-content: center;
@@ -116,4 +131,19 @@
         height: 250px;
       }
       
+      .scroll-to-top{
+        width: 20px;
+        padding: 10px;
+        height: 20px;
+      }
+      .scroll-to-top svg {
+        width: 18px;
+        height: 18px;
+        justify-content: center;
+        margin: auto;
+      }
+      .download-button {
+        font-size: 14px;
+        padding: 8px 16px;
+      }
 }

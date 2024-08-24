@@ -11,6 +11,7 @@ import Skills from './components/Skills';
 import Aos from "aos"
 import 'aos/dist/aos.css'
 import ScrollToTop from './components/ScrollToTop';
+import 'animate.css/animate.min.css';
 
 
 const App = () => {

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import projects from '../constants/projectData';
+import { FaDownload } from 'react-icons/fa';
 
 const Projects = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -14,17 +15,14 @@ const Projects = () => {
 
   return (
     <div className="projects-container" id='project'>
-      <h2 className="title" data-aos="fade-up"
-     data-aos-duration="3000">My Projects</h2>
+      <h2 className="title">My Projects</h2>
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div
             key={index}
-            className={`project-card ${index === activeIndex ? 'active' : ''}`}
+            className={`project-card ${index === activeIndex ? 'active' : ''} animate__animated animate__bounce`}
             onMouseEnter={() => handleMouseEnter(index)}
             onClick={() => handleClick(index)}
-            data-aos="fade-up"
-            data-aos-anchor-placement="center-center"
           >
             <h3 className="pro-title">{project.title}</h3>
               <img src={project.img} alt={project.title} className="project-thumbnail" />
@@ -36,6 +34,13 @@ const Projects = () => {
           
         ))}
       </div>
+
+      <div className="download-container">
+      <a href="/path-to-your-resume.pdf" download className="download-button">
+        Download my resume<FaDownload size={16} />
+      </a>
+    </div>
+
     </div>
   );
 };

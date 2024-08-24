@@ -16,22 +16,24 @@ const Header = () => {
             <h1 className="logo">My Portfolio</h1>
         </div>
 
-        <div className="navlinks">
-          <div className="theme-toggle">
+        <div className="navlinks">   
               <ThemeToggle />
-          </div>
-        <div className="mobile-toggle" onClick={toggleNav}>
-          
-          {isNavOpen ? <FaTimes size={30} /> : <FaBars size={30} />}
-        </div>
+              <div className="mobile-toggle" onClick={toggleNav}>
+                {isNavOpen ? <FaTimes size={30} /> : <FaBars size={30} />}
+              </div>
 
-          <nav className={`nav ${isNavOpen ? 'open' : ''}` } data-aos="zoom-in-right">
+          <nav 
+          className={`nav ${isNavOpen ? 'open' : ''}`} 
+
+          >
+            {isNavOpen && ( 
             <ul>
               <li><a href="#about" onClick={toggleNav}>About</a></li>
               <li><a href="#skills" onClick={toggleNav}>Skills</a></li>
               <li><a href="#projects" onClick={toggleNav}>Projects</a></li>
               <li><a href="#contact" onClick={toggleNav}>Contact</a></li>
             </ul>
+          )}
           </nav>
 
         </div>
