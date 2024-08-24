@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa'; // Import icons for the toggle bar
-import ThemeToggle from './ThemeToggle'; // Import your theme toggle component
+import { FaBars, FaTimes } from 'react-icons/fa'; 
+import ThemeToggle from './ThemeToggle'; 
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -11,22 +11,18 @@ const Header = () => {
 
   return (
     <header className="header">
+      <div className="cont">
+        <h1 className="logo">My Portfolio</h1>
+      </div>
 
-        <div className="cont">
-            <h1 className="logo">My Portfolio</h1>
+      <div className="navlinks">
+        <ThemeToggle />
+        <div className="mobile-toggle" onClick={toggleNav}>
+          {isNavOpen ? <FaTimes size={30} /> : <FaBars size={30} />}
         </div>
 
-        <div className="navlinks">   
-              <ThemeToggle />
-              <div className="mobile-toggle" onClick={toggleNav}>
-                {isNavOpen ? <FaTimes size={30} /> : <FaBars size={30} />}
-              </div>
-
-          <nav 
-          className={`nav ${isNavOpen ? 'open' : ''}`} 
-
-          >
-            {isNavOpen && ( 
+        <nav className={`nav ${isNavOpen ? 'open' : ''}`}>
+          {isNavOpen && (
             <ul>
               <li><a href="#about" onClick={toggleNav}>About</a></li>
               <li><a href="#skills" onClick={toggleNav}>Skills</a></li>
@@ -34,9 +30,8 @@ const Header = () => {
               <li><a href="#contact" onClick={toggleNav}>Contact</a></li>
             </ul>
           )}
-          </nav>
-
-        </div>
+        </nav>
+      </div>
     </header>
   );
 };
