@@ -30,14 +30,14 @@ const About = () => {
             <h2 data-aos="fade-up" data-aos-duration="500">{typedHeading}</h2>
             <p className={slideIn ? 'slide-in' : ''} data-aos="zoom-in">{aboutText}</p>
             <div className="download-container" data-aos="zoom-in">
-                <a href="#"  className="download-button" onClick={handleResumeClick}>
+                <a href="/assets/resume.pdf"  className="download-button" onClick={handleResumeClick} download>
                     Download my resume <FaDownload size={16} />
                 </a>
             </div>
 
-            {isModalOpen && (
+         {isModalOpen && (
                 <div className="modal-overlay" onClick={handleCloseModal}>
-                    <div className="modal-content" data-aos="zoom-in-up" data-aos-duration="800">
+                   <div className="modal-content" data-aos="zoom-in-up" data-aos-duration="800">
                         <h2 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800" className="resume">
                             Not yet ready, check back later.
                         </h2>
