@@ -30,7 +30,7 @@ const About = () => {
             <h2 data-aos="fade-up" data-aos-duration="500">{typedHeading}</h2>
             <p className={slideIn ? 'slide-in' : ''} data-aos="zoom-in">{aboutText}</p>
             <div className="download-container" data-aos="zoom-in">
-               < a href= "../../public/images/Resume.pdf"
+               <a href= "/images/Resume.pdf"
   className="download-button" download>
                     Download my resume <FaDownload size={16} />
                 </a>
