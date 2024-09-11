@@ -1,5 +1,12 @@
 const projects = [
     { 
+      title: 'UBuy', 
+      description: 'A web application that allows users to buy mobile phone online', 
+      img: '/images/3.png', 
+      url: 'https://u-buy-six.vercel.app/',
+      sourceUrl: 'https://github.com/Eunini/UBuy'
+    },
+    { 
       title: 'Search Food by Recipe', 
       description: 'A web application that allows users to search for recipes based on available ingredients, providing detailed instructions and video', 
       img: '/images/1.png', 
