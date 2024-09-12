@@ -1,0 +1,85 @@
+/* light mode styles */
+body.dark-mode {
+    background-color: #fff;
+    color: #333;
+  }
+  
+body.dark-mode header {
+    background-color: #fff;
+  }
+  
+body.dark-mode h2 {
+    border-bottom-color: white;
+}
+body.dark-mode section{
+    background-color: #fff;
+}
+body.dark-mode .header{
+    background-color: #fff;
+}
+
+body.dark-mode .header nav a{
+    color: #242424;
+}
+body.dark-mode .header h1{
+    color: #242424;
+}
+
+body.dark-mode .part2{
+    border: 2px solid #242424;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+body.dark-mode .title{
+    border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='30' viewBox='0 0 160 30'%3E%3Cpath fill='none' stroke='crimson' stroke-width='4' d='M0 15c30 20 70-20 100 0s70 20 100 0'/%3E%3C/svg%3E") 30 round;
+}
+body.dark-mode .skills-container{
+    background-color: white;
+}
+body.dark-mode .square{
+    border: 2px solid crimson;
+}
+body.dark-mode .skill-name {
+    color: crimson;
+}
+body.dark-mode .modal-content{
+    background: white;
+    border: 2px solid crimson;
+    color: #242424;
+}
+body.dark-mode .social-link{
+    color: #242424;
+}
+body.dark-mode .theme-icon{
+    color: black;
+}
+body.dark-mode .mobile-toggle{
+    color: #242424;
+}
+body.dark-mode .nav.open {
+    background-color: #242424;
+    opacity: .9;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+body.dark-mode .nav ul li a{
+    color: white;
+}
+body.dark-mode .project-card{
+    border: .5px solid crimson;
+}
+body.dark-mode .project-thumbnail::before {
+    background: #333;
+}
+body.dark-mode .project-info{
+    color: #242424;
+    font-weight: 600;
+}
+body.dark-mode .project-title{
+    color: #242424;
+    font-weight: 600;
+}
+body.dark-mode .view{
+    color: #242424;
+}
