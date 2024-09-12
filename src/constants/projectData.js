@@ -17,7 +17,7 @@ const projects = [
       title: 'HITBOX-GAMEX', 
       description: 'A game inspired for fun, cn be played just for relaxation.', 
       img: '/images/2.png',
-      url: 'https://hitbox-gamex.onrender.com',
+      url: ' https://hitboxgamex.vercel.app/ ',
       sourceUrl: 'https://github.com/Eunini/HITBOX-GAMEX'
     },
     { 
@@ -59,7 +59,7 @@ const projects = [
         title: 'Encrypt Word', 
         description: 'This is a solution to a coding challenge on encryption of sentence', 
         img: '/images/1.png', 
-        url: 'https://encrytion.onrender.com',
+        url: 'https://eunini.github.io/Encrytion/ ',
         sourceUrl: 'https://github.com/Eunini/Encryption' 
       },
   ];
