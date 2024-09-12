@@ -26,9 +26,9 @@ body.dark-mode .header h1{
 }
 
 body.dark-mode .part2{
-    margin:10px;
+    margin:10px 0;
     justify-content: center;
-    width: 90vw
+    width: 70vw
     border: 2px solid #242424;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
