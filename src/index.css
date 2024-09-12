@@ -407,6 +407,7 @@ li {
   border-radius: 50%;
   cursor: pointer;
   transition: opacity 0.3s ease-in-out;
+  width: fit-content;
   z-index: 1000;
   background-color: crimson;
   border: 0;

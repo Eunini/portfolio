@@ -24,7 +24,7 @@ const App = () => {
   return (
     <div>
       <Header />
-      <main>
+      <main className='mobile-width'>
         <About />
         <Skills />
         <Projects />

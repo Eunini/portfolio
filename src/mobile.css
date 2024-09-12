@@ -1,6 +1,10 @@
 @media screen and (max-width: 768px) {
   html{
-    width: 100%;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    
   }
     .theme-toggle {
         display: block;
@@ -13,7 +17,8 @@
         padding: 0 5px;
       }
       .header {
-        width: 100vw;
+        width: 90vw;
+
       }
       .logo{
         width: 170px;
@@ -168,7 +173,8 @@
         gap: 1rem;
       }
       .scroll-to-top{
-        width: 20px;
+        position: fixed;
+        width: fit-content;
         padding: 10px;
         height: 20px;
       }
