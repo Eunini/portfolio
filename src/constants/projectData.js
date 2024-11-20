@@ -13,20 +13,6 @@ const projects = [
       url: 'https://search-food-by-recipes.onrender.com',
       sourceUrl: 'https://github.com/Eunini/search-food-by-recipes'
     },
-    { 
-      title: 'HITBOX-GAMEX', 
-      description: 'A game inspired for fun, cn be played just for relaxation.', 
-      img: '/images/2.png',
-      url: ' https://hitboxgamex.vercel.app/ ',
-      sourceUrl: 'https://github.com/Eunini/HITBOX-GAMEX'
-    },
-    { 
-        title: 'Calculator', 
-        description: 'A simple and efficient calculator that handles basic arithmetic operations with a clean interface.', 
-        img: '/images/3.png',
-        url: 'https://calculator-hsq4.onrender.com',
-        sourceUrl: 'https://github.com/Eunini/calculator'
-      },
       { 
         title: 'Easy Banking', 
         description: 'A user-friendly banking site landing page designed to practice frontend skill.', 
@@ -41,26 +27,12 @@ const projects = [
         url: 'https://burgervillie.onrender.com',
         sourceUrl: 'https://github.com/Eunini/BurgerVilla' 
       },
-      { 
-        title: 'Spectral', 
-        description: 'A landing page on fashion, updates and advice from fashionistas', 
-        img: '/images/7.png', 
-        url: 'https://spectral-w7h1.onrender.com',
-        sourceUrl: 'https://github.com/Eunini/spectral' 
-      },
-      { 
-        title: 'Check Weather', 
-        description: 'A weather site that provides real-time weather updates for any location worldwide.', 
-        img: '/images/8.png', 
-        url: 'https://checkweather-itkr.onrender.com',
-        sourceUrl: 'https://github.com/Eunini/checkweather' 
-      },
-      { 
-        title: 'Encrypt Word', 
-        description: 'This is a solution to a coding challenge on encryption of sentence', 
-        img: '/images/1.png', 
-        url: 'https://eunini.github.io/Encrytion/ ',
-        sourceUrl: 'https://github.com/Eunini/Encryption' 
+     { 
+        title: 'FantasyDevs', 
+        description: 'An online landing system for web developers.', 
+        img: '/images/6.png', 
+        url: 'https://fantasy-devs-8nic.vercel.app/',
+        sourceUrl: 'FantasyDevs' 
       },
   ];
   
