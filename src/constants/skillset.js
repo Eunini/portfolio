@@ -18,33 +18,15 @@ const skills = [
       img: '/images/html.png' 
     },
     { 
-      name: 'Java', 
-      level: 70, 
-      info: 'Java due to its programming paradigm, help simplify my work.', 
-      img: '/images/java.png' 
-    },
-    { 
-      name: 'Python', 
-      level: 75, 
-      info: 'Python is a versatile language I use for data analysis, AI, Image Analysis and more.', 
-      img: '/images/py.png' 
-    },
-    { 
       name: 'Git & GitHub', 
       level: 85, 
       info: 'Git & GitHub are crucial for version control and collaborative development.', 
       img: '/images/git-image.png' 
     },
     { 
-      name: 'Node.js', 
-      level: 65, 
-      info: 'I use Node.js for building scalable server-side project like APIs.', 
-      img: '/images/node.png' 
-    },
-    { 
-      name: 'MongoDB', 
+      name: 'Next.js', 
       level: 75, 
-      info: 'MongoDB used to store and process large amounts of data, making it ideal for applications that need to manage vast datasets', 
+      info: "I use it to build fast, scalable abd SEO optimised websites.",
       img: '/images/mongo.png' 
     },
     { 
