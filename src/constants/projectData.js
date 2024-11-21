@@ -30,7 +30,7 @@ const projects = [
      { 
         title: 'FantasyDevs', 
         description: 'An online landing system for web developers.', 
-        img: '/images/6.png', 
+        img: '/images/IMG-20241121-WA0022.jpg', 
         url: 'https://fantasy-devs-8nic.vercel.app/',
         sourceUrl: 'FantasyDevs' 
       },
